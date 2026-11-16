@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Mahmoud Mahdy | IT Infrastructure & Systems Specialist</title>
+  <meta name="description" content="Portfolio of Mohamed Mahmoud Mahdy - Dedicated IT Infrastructure & Systems Specialist experienced in Windows/Linux servers, Cisco networking, VMware virtualization, Sophos/pfSense security, and Azure/AWS Cloud.">
+  <meta name="keywords" content="Mohamed Mahmoud Mahdy, IT System Administrator, IT Infrastructure Specialist, VMware ESXi, Cisco, pfSense, Sophos XG, Azure, AWS, MCSA, CCNA, Cairo Egypt">
+  <meta name="author" content="Mohamed Mahmoud Mahdy">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="Mohamed Mahmoud Mahdy | IT Infrastructure & Systems Specialist">
+  <meta property="og:description" content="Enterprise Systems Administration, VMware Virtualization, Cisco Networking, Perimeter Firewalls, and Cloud Infrastructure.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://m-m-mahdy.github.io/Mohamed-Mahdy/">
+  <meta property="og:image" content="assets/images/certificate_cloud_engineering.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: ['selector', '[data-theme="dark"]'],
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#0a0f1d] text-slate-100 antialiased selection:bg-sky-500 selection:text-white bg-grid-pattern relative">
+
+  <!-- Ambient background glow elements -->
+  <div class="fixed top-0 left-1/4 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+  <div class="fixed bottom-10 right-10 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+  <!-- ==================== HEADER / NAVBAR ==================== -->
+  <header class="sticky top-0 z-40 backdrop-blur-md bg-[#0a0f1d]/85 border-b border-sky-500/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-sky-400 to-blue-600 p-[1px] shadow-lg shadow-sky-500/20 group-hover:shadow-sky-500/40 transition">
+          <div class="w-full h-full bg-[#0b1120] rounded-[11px] flex items-center justify-center font-mono font-bold text-sky-400">
+            <i class="fa-solid fa-server text-base"></i>
+          </div>
+        </div>
+        <div>
+          <div class="font-extrabold text-lg tracking-tight group-hover:text-sky-400 transition flex items-center gap-2">
+            Mohamed Mahdy
+            <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          </div>
+          <p class="text-xs text-slate-400 font-mono tracking-wider">IT Infrastructure & Systems</p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-sky-400 transition">About</a>
+        <a href="#skills" class="hover:text-sky-400 transition">Skills Matrix</a>
+        <a href="#experience" class="hover:text-sky-400 transition">Experience</a>
+        <a href="#certifications" class="hover:text-sky-400 transition">Certifications</a>
+        <a href="#infrastructure" class="hover:text-sky-400 transition">Architecture</a>
+        <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden lg:flex items-center gap-4">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="w-10 h-10 rounded-lg border border-slate-700 bg-slate-800/60 hover:bg-slate-700 text-slate-300 flex items-center justify-center transition" title="Toggle theme" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun theme-icon-sun text-amber-400"></i>
+          <i class="fa-solid fa-moon theme-icon-moon text-sky-400 hidden"></i>
+        </button>
+
+        <!-- Download CV Button -->
+        <a href="assets/Mohamed_Mahmoud_Mahdy_CV.pdf" download="Mohamed_Mahmoud_Mahdy_CV.pdf" class="px-4 py-2.5 rounded-lg text-sm font-semibold bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white shadow-lg shadow-sky-500/25 flex items-center gap-2 transition transform hover:-translate-y-0.5">
+          <i class="fa-solid fa-file-pdf"></i>
+          <span>Download CV</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="flex items-center gap-2 md:hidden">
+        <button id="theme-toggle-mobile" class="w-9 h-9 rounded-lg border border-slate-700 bg-slate-800/60 text-slate-300 flex items-center justify-center" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun theme-icon-sun text-amber-400 text-xs"></i>
+          <i class="fa-solid fa-moon theme-icon-moon text-sky-400 text-xs hidden"></i>
+        </button>
+        <button id="mobile-menu-btn" class="w-10 h-10 rounded-lg border border-slate-700 bg-slate-800/80 text-slate-200 flex items-center justify-center text-lg" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0c1322] border-b border-slate-800 px-6 py-5 space-y-4">
+      <a href="#about" class="block mobile-nav-link text-slate-300 hover:text-sky-400 text-base font-medium">About</a>
+      <a href="#skills" class="block mobile-nav-link text-slate-300 hover:text-sky-400 text-base font-medium">Skills Matrix</a>
+      <a href="#experience" class="block mobile-nav-link text-slate-300 hover:text-sky-400 text-base font-medium">Experience</a>
+      <a href="#certifications" class="block mobile-nav-link text-slate-300 hover:text-sky-400 text-base font-medium">Certifications</a>
+      <a href="#infrastructure" class="block mobile-nav-link text-slate-300 hover:text-sky-400 text-base font-medium">Architecture</a>
+      <a href="#contact" class="block mobile-nav-link text-slate-300 hover:text-sky-400 text-base font-medium">Contact</a>
+      <div class="pt-3 border-t border-slate-800">
+        <a href="assets/Mohamed_Mahmoud_Mahdy_CV.pdf" download class="w-full py-2.5 rounded-lg text-sm font-semibold bg-sky-500 text-white flex items-center justify-center gap-2">
+          <i class="fa-solid fa-download"></i> Download CV (PDF)
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="about" class="py-16 md:py-24 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column: Bio & Core Info -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Live Status Badge -->
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Available for IT Infrastructure & Cloud Roles</span>
+          </div>
+
+          <!-- Headline & Title -->
+          <div class="space-y-2">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white">
+              Mohamed <span class="text-gradient">Mahmoud Mahdy</span>
+            </h1>
+            <p class="text-xl sm:text-2xl font-mono text-sky-400 font-semibold flex items-center gap-2 flex-wrap">
+              <span>IT Infrastructure & Systems Specialist</span>
+              <span class="text-slate-500 hidden sm:inline">•</span>
+              <span class="text-slate-300 text-lg">Cloud & Network Engineer</span>
+            </p>
+          </div>
+
+          <!-- Professional Summary -->
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+            Dedicated IT Infrastructure & Systems Specialist with extensive hands-on experience in enterprise network administration, Windows/Linux server management, VMware ESXi virtualization, and perimeter network security. Adept at bridging IT operations with business productivity through automated workflows, robust backup strategies, and scalable systems administration.
+          </p>
+
+          <!-- Key highlights pills -->
+          <div class="flex flex-wrap gap-2 text-xs font-mono">
+            <span class="px-3 py-1.5 rounded-md bg-slate-800/80 border border-slate-700/80 text-sky-300 flex items-center gap-1.5">
+              <i class="fa-brands fa-windows text-blue-400"></i> Windows Server 2008-2022
+            </span>
+            <span class="px-3 py-1.5 rounded-md bg-slate-800/80 border border-slate-700/80 text-sky-300 flex items-center gap-1.5">
+              <i class="fa-solid fa-network-wired text-emerald-400"></i> Cisco 3850/3750/3650
+            </span>
+            <span class="px-3 py-1.5 rounded-md bg-slate-800/80 border border-slate-700/80 text-sky-300 flex items-center gap-1.5">
+              <i class="fa-solid fa-shield-halved text-amber-400"></i> Sophos XG & pfSense
+            </span>
+            <span class="px-3 py-1.5 rounded-md bg-slate-800/80 border border-slate-700/80 text-sky-300 flex items-center gap-1.5">
+              <i class="fa-solid fa-cubes text-purple-400"></i> VMware ESXi & Hyper-V
+            </span>
+            <span class="px-3 py-1.5 rounded-md bg-slate-800/80 border border-slate-700/80 text-sky-300 flex items-center gap-1.5">
+              <i class="fa-brands fa-microsoft text-sky-400"></i> Azure & M365 Admin
+            </span>
+            <span class="px-3 py-1.5 rounded-md bg-slate-800/80 border border-slate-700/80 text-sky-300 flex items-center gap-1.5">
+              <i class="fa-solid fa-database text-green-400"></i> Veeam Backup v12
+            </span>
+          </div>
+
+          <!-- Direct Contact Pills -->
+          <div class="pt-2 flex flex-wrap items-center gap-4 text-sm text-slate-400">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-location-dot text-sky-400"></i>
+              <span>Cairo, Egypt</span>
+            </div>
+            <a href="tel:01031960100" class="flex items-center gap-2 hover:text-sky-400 transition">
+              <i class="fa-solid fa-phone text-emerald-400"></i>
+              <span>01031960100</span>
+            </a>
+            <a href="mailto:mohamed.mahmoudit5@gmail.com" class="flex items-center gap-2 hover:text-sky-400 transition">
+              <i class="fa-solid fa-envelope text-sky-400"></i>
+              <span>mohamed.mahmoudit5@gmail.com</span>
+            </a>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="pt-4 flex flex-wrap items-center gap-4">
+            <a href="assets/Mohamed_Mahmoud_Mahdy_CV.pdf" download="Mohamed_Mahmoud_Mahdy_CV.pdf" class="px-6 py-3.5 rounded-xl font-semibold bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white shadow-xl shadow-sky-500/30 flex items-center gap-2.5 transition transform hover:-translate-y-0.5">
+              <i class="fa-solid fa-file-arrow-down text-lg"></i>
+              <span>Download Full CV (PDF)</span>
+            </a>
+
+            <button class="copy-email-btn px-5 py-3.5 rounded-xl font-medium bg-slate-800/90 hover:bg-slate-700 border border-slate-700 text-slate-200 flex items-center gap-2.5 transition">
+              <i class="fa-regular fa-copy text-sky-400"></i>
+              <span>Copy Email</span>
+            </button>
+
+            <a href="https://wa.me/201031960100" target="_blank" rel="noopener noreferrer" class="px-5 py-3.5 rounded-xl font-medium bg-emerald-600/20 hover:bg-emerald-600/30 border border-emerald-500/40 text-emerald-300 flex items-center gap-2 transition">
+              <i class="fa-brands fa-whatsapp text-lg text-emerald-400"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Interactive Terminal & Engineer Persona -->
+        <div class="lg:col-span-5 space-y-4">
+          
+          <!-- Terminal Window -->
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="terminal-dot bg-red-500"></span>
+                <span class="terminal-dot bg-amber-500"></span>
+                <span class="terminal-dot bg-emerald-500"></span>
+              </div>
+              <div class="text-xs font-mono text-slate-400 flex items-center gap-2">
+                <i class="fa-solid fa-terminal text-sky-400 text-xs"></i>
+                <span>admin@mahdy-srv01:~ (PowerShell)</span>
+              </div>
+              <span class="w-10"></span>
+            </div>
+
+            <!-- Suggested Command Chips -->
+            <div class="px-4 py-2.5 bg-slate-900/90 border-b border-slate-800 flex items-center gap-2 flex-wrap">
+              <span class="text-[11px] font-mono text-slate-400">Quick run:</span>
+              <button class="term-chip" data-cmd="sysinfo">sysinfo</button>
+              <button class="term-chip" data-cmd="skills">skills</button>
+              <button class="term-chip" data-cmd="certifications">certifications</button>
+              <button class="term-chip" data-cmd="uptime">uptime</button>
+              <button class="term-chip" data-cmd="contact">contact</button>
+            </div>
+
+            <!-- Terminal Screen Body -->
+            <div id="terminal-output" class="terminal-body space-y-2">
+              <div>
+                <span class="terminal-prompt">admin@mahdy-srv01:~$</span> <span class="text-white">whoami</span>
+              </div>
+              <div class="terminal-output">Mohamed Mahmoud Mahdy — IT Infrastructure & Systems Specialist
+[STATUS] Active Administrator | 99.9% Systems Reliability Target
+[SPECIALTY] Active Directory, VMware ESXi, Cisco Switching, Sophos XG & pfSense</div>
+              
+              <div>
+                <span class="terminal-prompt">admin@mahdy-srv01:~$</span> <span class="text-white">get-infrastructure-summary</span>
+              </div>
+              <div class="terminal-output">● Domain Controllers: Windows Server 2019/2022 Multi-Site
+● Virtualization: VMware ESXi Clusters + Microsoft Hyper-V
+● Backup Engine: Veeam Backup & Replication v12
+● Perimeter: Cisco 3850/3750/3650 + Sophos XG Site-To-Site VPNs</div>
+            </div>
+
+            <!-- Interactive CLI Prompt Input -->
+            <div class="p-3 bg-[#0c1220] border-t border-slate-800/80 flex items-center gap-2">
+              <span class="text-sky-400 font-mono text-xs font-bold">admin@mahdy-srv01:~$</span>
+              <input type="text" id="terminal-input" placeholder="Type 'help', 'sysinfo', 'certifications'..." class="w-full bg-transparent text-xs font-mono text-slate-200 outline-none placeholder:text-slate-600">
+              <span class="text-[10px] font-mono text-slate-500 uppercase px-1.5 py-0.5 rounded border border-slate-700">Enter</span>
+            </div>
+          </div>
+
+          <!-- Quick Identity Badge Card -->
+          <div class="glass-card rounded-xl p-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400 text-xl">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <div>
+                <p class="text-xs font-mono text-sky-400 uppercase tracking-wider font-semibold">Verified Credential</p>
+                <h2 class="text-sm font-bold text-white">Cloud Engineering Program (320h)</h2>
+                <p class="text-xs text-slate-400">IT Gate Academy • Grade: Very Good</p>
+              </div>
+            </div>
+            <button class="open-cert-modal px-3 py-1.5 rounded-lg text-xs font-semibold bg-sky-500/20 hover:bg-sky-500/30 text-sky-300 border border-sky-500/40 transition">
+              Preview <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== IMPACT METRICS BANNER ==================== -->
+  <section class="py-8 border-y border-slate-800/80 bg-slate-900/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        
+        <div class="p-4 rounded-xl glass-card">
+          <div class="text-3xl sm:text-4xl font-extrabold text-sky-400 font-mono">6+</div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Years in IT & Infrastructure</div>
+        </div>
+
+        <div class="p-4 rounded-xl glass-card">
+          <div class="text-3xl sm:text-4xl font-extrabold text-emerald-400 font-mono">99.9%</div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">System Uptime & SLA Target</div>
+        </div>
+
+        <div class="p-4 rounded-xl glass-card">
+          <div class="text-3xl sm:text-4xl font-extrabold text-amber-400 font-mono">320+</div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Credit Hours Cloud Engineering</div>
+        </div>
+
+        <div class="p-4 rounded-xl glass-card">
+          <div class="text-3xl sm:text-4xl font-extrabold text-purple-400 font-mono">100%</div>
+          <div class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Perimeter Security & Backup Integrity</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== CORE SPECIALIZATIONS ==================== -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-widest text-sky-400">Core Engineering Domains</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Enterprise Infrastructure Capabilities</h3>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Proven competencies across systems administration, virtualization clusters, network perimeters, and modern hybrid cloud systems.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Domain 1: Systems & Active Directory -->
+        <div class="glass-card rounded-2xl p-6 space-y-4 hover:border-sky-400/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/15 text-blue-400 flex items-center justify-center text-xl">
+            <i class="fa-brands fa-windows"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white">Windows Server & Active Directory</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Deployment and administration of Windows Server (2008 to 2022), Domain Controllers, DNS, DHCP, granular Group Policies (GPO), and enterprise File/Print cluster permissions.
+          </p>
+          <div class="pt-2 flex flex-wrap gap-1.5 text-xs font-mono text-sky-300">
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">AD DS</span>
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">GPO</span>
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">DNS/DHCP</span>
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">File Sharing</span>
+          </div>
+        </div>
+
+        <!-- Domain 2: Virtualization & Disaster Recovery -->
+        <div class="glass-card rounded-2xl p-6 space-y-4 hover:border-emerald-400/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center text-xl">
+            <i class="fa-solid fa-cubes"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white">Virtualization & Veeam Backup</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Architecting and maintaining VMware ESXi hypervisors and Microsoft Hyper-V environments. Administering Veeam Backup & Replication v12 for immutable disaster recovery and zero-loss restore.
+          </p>
+          <div class="pt-2 flex flex-wrap gap-1.5 text-xs font-mono text-emerald-300">
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">VMware ESXi</span>
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">Hyper-V</span>
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">Veeam v12</span>
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">Instant Recovery</span>
+          </div>
+        </div>
+
+        <!-- Domain 3: Networking & Perimeter Security -->
+        <div class="glass-card rounded-2xl p-6 space-y-4 hover:border-amber-400/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center text-xl">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white">Cisco Switching & Firewalls</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Configuring Cisco managed switches (3850, 3750, 3650), VLAN segmentation, Trunking, and Access ports. Deploying Sophos XG Firewall and pfSense with Site-to-Site IPsec VPN tunnels.
+          </p>
+          <div class="pt-2 flex flex-wrap gap-1.5 text-xs font-mono text-amber-300">
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">Cisco 3850/3750</span>
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">Sophos XG</span>
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">pfSense</span>
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">Site-to-Site VPN</span>
+          </div>
+        </div>
+
+        <!-- Domain 4: Cloud & Modern Workspaces -->
+        <div class="glass-card rounded-2xl p-6 space-y-4 hover:border-sky-400/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-sky-500/15 text-sky-400 flex items-center justify-center text-xl">
+            <i class="fa-solid fa-cloud"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white">Azure, AWS & M365 Cloud</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Microsoft 365 tenant administration, Exchange Online mail management, Microsoft Azure (AZ-900, AZ-104, AZ-305), AWS Solutions Architect foundations, and Docker containerization.
+          </p>
+          <div class="pt-2 flex flex-wrap gap-1.5 text-xs font-mono text-sky-300">
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">Azure AZ-104/305</span>
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">AWS SysOps</span>
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">Microsoft 365</span>
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">Docker</span>
+          </div>
+        </div>
+
+        <!-- Domain 5: Enterprise ERP & Endpoint Security -->
+        <div class="glass-card rounded-2xl p-6 space-y-4 hover:border-purple-400/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/15 text-purple-400 flex items-center justify-center text-xl">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white">ERP Systems & Security Ops</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Support and administration of ERP NEXT and Microsoft Dynamics 365 NAV. Enterprise protection via Kaspersky Endpoint Security Cloud Plus, Outlook email servers, and user access policies.
+          </p>
+          <div class="pt-2 flex flex-wrap gap-1.5 text-xs font-mono text-purple-300">
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">ERP NEXT</span>
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">Dynamics NAV</span>
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">Kaspersky Cloud</span>
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">Outlook Mail</span>
+          </div>
+        </div>
+
+        <!-- Domain 6: Physical Infrastructure & Telephony -->
+        <div class="glass-card rounded-2xl p-6 space-y-4 hover:border-emerald-400/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-teal-500/15 text-teal-400 flex items-center justify-center text-xl">
+            <i class="fa-solid fa-server"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white">Physical Racks & Telephony</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Data center rack organization, enterprise UPS, patch panels, Hikvision/Dahua CCTV & IP surveillance, Grandstream IP PBX, Panasonic analog PBX, and biometric fingerprint attendance.
+          </p>
+          <div class="pt-2 flex flex-wrap gap-1.5 text-xs font-mono text-teal-300">
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">Server Racks</span>
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">CCTV & IP Cam</span>
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">Grandstream PBX</span>
+            <span class="bg-slate-800/80 px-2.5 py-1 rounded">Biometrics</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== SKILLS MATRIX ==================== -->
+  <section id="skills" class="py-20 bg-slate-900/30 border-t border-slate-800/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-widest text-sky-400">Technical Arsenal</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Comprehensive Skills Matrix</h3>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Filter through specific technology domains to explore tools, protocols, and hardware platforms.
+        </p>
+
+        <!-- Category Filters -->
+        <div class="pt-4 flex flex-wrap items-center justify-center gap-2">
+          <button class="filter-btn active px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-slate-800 border border-slate-700 text-slate-300 transition" data-filter="all">
+            All Skills
+          </button>
+          <button class="filter-btn px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-slate-800 border border-slate-700 text-slate-300 transition" data-filter="systems">
+            Systems & OS
+          </button>
+          <button class="filter-btn px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-slate-800 border border-slate-700 text-slate-300 transition" data-filter="virtualization">
+            Virtualization & Backup
+          </button>
+          <button class="filter-btn px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-slate-800 border border-slate-700 text-slate-300 transition" data-filter="networking">
+            Networking & Firewalls
+          </button>
+          <button class="filter-btn px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-slate-800 border border-slate-700 text-slate-300 transition" data-filter="cloud">
+            Cloud & Containers
+          </button>
+          <button class="filter-btn px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-slate-800 border border-slate-700 text-slate-300 transition" data-filter="business">
+            ERP & Business
+          </button>
+          <button class="filter-btn px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-slate-800 border border-slate-700 text-slate-300 transition" data-filter="hardware">
+            Hardware & PBX
+          </button>
+        </div>
+      </div>
+
+      <!-- Skills Cards Grid -->
+      <div id="skills-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <!-- Skill 1 -->
+        <div class="skill-card glass-card rounded-xl p-5" data-category="systems">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-mono text-sky-400 bg-sky-500/10 px-2.5 py-1 rounded border border-sky-500/20">Systems Administration</span>
+            <i class="fa-brands fa-windows text-blue-400 text-lg"></i>
+          </div>
+          <h4 class="text-base font-bold text-white">Windows Server Ecosystem</h4>
+          <p class="text-xs text-slate-400 mt-1">Windows Server 2008, 2012, 2016, 2019, 2022. Domain Controller, DNS, DHCP, GPO, File & Print Clusters.</p>
+          <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>Enterprise Mastery</span>
+            <span class="text-emerald-400 font-bold">Expert</span>
+          </div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="skill-card glass-card rounded-xl p-5" data-category="systems">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-mono text-sky-400 bg-sky-500/10 px-2.5 py-1 rounded border border-sky-500/20">Directory Services</span>
+            <i class="fa-solid fa-users-gear text-sky-400 text-lg"></i>
+          </div>
+          <h4 class="text-base font-bold text-white">Active Directory & Group Policy</h4>
+          <p class="text-xs text-slate-400 mt-1">User lifecycle management, organizational units (OUs), security groups, password policies, and hardening.</p>
+          <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>Identity Management</span>
+            <span class="text-emerald-400 font-bold">Expert</span>
+          </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="skill-card glass-card rounded-xl p-5" data-category="virtualization">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">Hypervisor</span>
+            <i class="fa-solid fa-cube text-emerald-400 text-lg"></i>
+          </div>
+          <h4 class="text-base font-bold text-white">VMware ESXi & vSphere</h4>
+          <p class="text-xs text-slate-400 mt-1">Deploying virtual machines, resource allocation, virtual switches, storage provisioning, and high availability.</p>
+          <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>Virtual Infrastructure</span>
+            <span class="text-emerald-400 font-bold">Advanced</span>
+          </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="skill-card glass-card rounded-xl p-5" data-category="virtualization">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">Disaster Recovery</span>
+            <i class="fa-solid fa-floppy-disk text-emerald-400 text-lg"></i>
+          </div>
+          <h4 class="text-base font-bold text-white">Veeam Backup & Replication v12</h4>
+          <p class="text-xs text-slate-400 mt-1">Automated VM backup repositories, replication jobs, granular item-level restore, and disaster recovery drills.</p>
+          <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>Data Protection</span>
+            <span class="text-emerald-400 font-bold">Advanced</span>
+          </div>
+        </div>
+
+        <!-- Skill 5 -->
+        <div class="skill-card glass-card rounded-xl p-5" data-category="virtualization">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">Hypervisor</span>
+            <i class="fa-brands fa-microsoft text-blue-400 text-lg"></i>
+          </div>
+          <h4 class="text-base font-bold text-white">Microsoft Hyper-V</h4>
+          <p class="text-xs text-slate-400 mt-1">Virtual machine clustering, VHDX storage management, virtual networks, and seamless host migrations.</p>
+          <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>Windows Virtualization</span>
+            <span class="text-emerald-400 font-bold">Advanced</span>
+          </div>
+        </div>
+
+        <!-- Skill 6 -->
+        <div class="skill-card glass-card rounded-xl p-5" data-category="networking">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-mono text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded border border-amber-500/20">Switching</span>
+            <i class="fa-solid fa-network-wired text-amber-400 text-lg"></i>
+          </div>
+          <h4 class="text-base font-bold text-white">Cisco Catalyst (3850 / 3750 / 3650)</h4>
+          <p class="text-xs text-slate-400 mt-1">VLAN design, Trunking (802.1Q), Access Ports, Port Security, STP, EtherChannel, and CLI configuration.</p>
+          <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>Network Engineering</span>
+            <span class="text-amber-400 font-bold">Advanced</span>
+          </div>
+        </div>
+
+        <!-- Skill 7 -->
+        <div class="skill-card glass-card rounded-xl p-5" data-category="networking">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-mono text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded border border-amber-500/20">Network Security</span>
+            <i class="fa-solid fa-shield-virus text-amber-400 text-lg"></i>
+          </div>
+          <h4 class="text-base font-bold text-white">Sophos XG Firewall & pfSense</h4>
+          <p class="text-xs text-slate-400 mt-1">Perimeter firewall policies, NAT/PAT rules, Site-to-Site IPsec VPN, SSL VPN for remote workforce, IPS/IDS.</p>
+          <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>Perimeter Defense</span>
+            <span class="text-amber-400 font-bold">Advanced</span>
+          </div>
+        </div>
+
+        <!-- Skill 8 -->
+        <div class="skill-card glass-card rounded-xl p-5" data-category="cloud">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-mono text-sky-400 bg-sky-500/10 px-2.5 py-1 rounded border border-sky-500/20">Cloud Platforms</span>
+            <i class="fa-brands fa-microsoft text-sky-400 text-lg"></i>
+          </div>
+          <h4 class="text-base font-bold text-white">Microsoft Azure (AZ-900 / 104 / 305)</h4>
+          <p class="text-xs text-slate-400 mt-1">Azure AD (Entra ID), Azure Virtual Machines, Virtual Networks, Storage Accounts, and hybrid cloud integration.</p>
+          <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>Cloud Architecture</span>
+            <span class="text-sky-400 font-bold">Proficient</span>
+          </div>
+        </div>
+
+        <!-- Skill 9 -->
+        <div class="skill-card glass-card rounded-xl p-5" data-category="cloud">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-mono text-sky-400 bg-sky-500/10 px-2.5 py-1 rounded border border-sky-500/20">Workspace & Cloud</span>
+            <i class="fa-solid fa-cloud-arrow-up text-sky-400 text-lg"></i>
+          </div>
+          <h4 class="text-base font-bold text-white">Microsoft 365 Administration</h4>
+          <p class="text-xs text-slate-400 mt-1">Exchange Online, user mailbox delegation, Teams, OneDrive for Business, and Security & Compliance Center.</p>
+          <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>SaaS Management</span>
+            <span class="text-sky-400 font-bold">Advanced</span>
+          </div>
+        </div>
+
+        <!-- Skill 10 -->
+        <div class="skill-card glass-card rounded-xl p-5" data-category="cloud systems">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-mono text-sky-400 bg-sky-500/10 px-2.5 py-1 rounded border border-sky-500/20">Linux & Containers</span>
+            <i class="fa-brands fa-docker text-blue-400 text-lg"></i>
+          </div>
+          <h4 class="text-base font-bold text-white">Linux Admin I & Docker</h4>
+          <p class="text-xs text-slate-400 mt-1">Linux system administration, bash operations, permissions, Docker container runtime, and AWS fundamentals.</p>
+          <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>Modern Systems</span>
+            <span class="text-sky-400 font-bold">Intermediate</span>
+          </div>
+        </div>
+
+        <!-- Skill 11 -->
+        <div class="skill-card glass-card rounded-xl p-5" data-category="business">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-mono text-purple-400 bg-purple-500/10 px-2.5 py-1 rounded border border-purple-500/20">Enterprise Software</span>
+            <i class="fa-solid fa-layer-group text-purple-400 text-lg"></i>
+          </div>
+          <h4 class="text-base font-bold text-white">ERP NEXT & Dynamics 365 NAV</h4>
+          <p class="text-xs text-slate-400 mt-1">ERP environment maintenance, database backups, user permissions, workflow support, and client connectivity.</p>
+          <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>Business Systems</span>
+            <span class="text-purple-400 font-bold">Advanced</span>
+          </div>
+        </div>
+
+        <!-- Skill 12 -->
+        <div class="skill-card glass-card rounded-xl p-5" data-category="hardware">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-mono text-teal-400 bg-teal-500/10 px-2.5 py-1 rounded border border-teal-500/20">Telephony & Hardware</span>
+            <i class="fa-solid fa-phone-volume text-teal-400 text-lg"></i>
+          </div>
+          <h4 class="text-base font-bold text-white">PBX Telephony & CCTV Systems</h4>
+          <p class="text-xs text-slate-400 mt-1">Grandstream IP PBX, Panasonic TES824 analog phone system, IP/analog CCTV surveillance, and fingerprint access.</p>
+          <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>Physical IT</span>
+            <span class="text-teal-400 font-bold">Expert</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== CAREER TIMELINE / EXPERIENCE ==================== -->
+  <section id="experience" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-widest text-sky-400">Career Trajectory</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Professional Experience</h3>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Proven track record of managing enterprise IT environments, mission-critical infrastructure, and multi-branch networks.
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto space-y-8">
+        
+        <!-- Job 1: Present -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card rounded-2xl p-6 sm:p-8 space-y-4 border-l-4 border-l-sky-500">
+            
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <span class="inline-block px-3 py-1 rounded-full text-xs font-mono font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 mb-2">
+                  Current Role • Full-Time
+                </span>
+                <h4 class="text-xl sm:text-2xl font-bold text-white">IT System Administrator</h4>
+                <p class="text-base font-semibold text-sky-400">The United Batteries</p>
+              </div>
+              <div class="text-xs sm:text-sm font-mono text-slate-400 flex items-center gap-2">
+                <i class="fa-regular fa-calendar"></i>
+                <span>July 2025 – Present</span>
+              </div>
+            </div>
+
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Leading the enterprise IT operations, domain infrastructure, server virtualization, and security posture across the corporate network.
+            </p>
+
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-300">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-sky-400 mt-1 flex-shrink-0"></i>
+                <span>Administer Domain Controllers on Windows Server 2019/2022, governing DNS, DHCP, File/Print servers, GPOs, and user access controls.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-sky-400 mt-1 flex-shrink-0"></i>
+                <span>Manage VMware ESXi virtualization infrastructure and implement full disaster recovery via Veeam Backup Server v12.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-sky-400 mt-1 flex-shrink-0"></i>
+                <span>Configure Cisco enterprise switches (3850, 3750, 3650) including VLAN segmentation, Trunking, and secure Access ports.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-sky-400 mt-1 flex-shrink-0"></i>
+                <span>Manage Sophos and pfSense firewalls, including encrypted Site-to-Site VPN setups for branch office connectivity.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-sky-400 mt-1 flex-shrink-0"></i>
+                <span>Support and maintain ERP NEXT, Outlook mail services, file server permissions, Kaspersky Endpoint Cloud Plus, Grandstream IP phones, and CCTV.</span>
+              </li>
+            </ul>
+
+            <div class="pt-2 flex flex-wrap gap-2 text-xs font-mono text-slate-400">
+              <span class="bg-slate-800 px-2.5 py-1 rounded">Windows Server 2022</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">VMware ESXi</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">Veeam v12</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">Cisco 3850</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">Sophos XG</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">pfSense VPN</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">ERP NEXT</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Job 2: Esla -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card rounded-2xl p-6 sm:p-8 space-y-4">
+            
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <h4 class="text-xl sm:text-2xl font-bold text-white">IT System Administrator</h4>
+                <p class="text-base font-semibold text-sky-400">The Esla Ready Mode Garments Company</p>
+              </div>
+              <div class="text-xs sm:text-sm font-mono text-slate-400 flex items-center gap-2">
+                <i class="fa-regular fa-calendar"></i>
+                <span>November 2023 – July 2025</span>
+              </div>
+            </div>
+
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Maintained core system reliability, enterprise ERP servers, and secure branch connectivity across factory facilities.
+            </p>
+
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-300">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-sky-400 mt-1 flex-shrink-0"></i>
+                <span>Administered Windows Server 2019 Domain Controller, managing DNS, DHCP, and centralized Group Policies.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-sky-400 mt-1 flex-shrink-0"></i>
+                <span>Managed Microsoft Hyper-V virtualization environment and supported Microsoft Dynamics 365 NAV ERP system.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-sky-400 mt-1 flex-shrink-0"></i>
+                <span>Configured and monitored Sophos and pfSense firewalls, including continuous Site-to-Site VPN tunnels between locations.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-sky-400 mt-1 flex-shrink-0"></i>
+                <span>Maintained computer networks, server systems, Panasonic TES824 analog phone installations, and CCTV surveillance networks.</span>
+              </li>
+            </ul>
+
+            <div class="pt-2 flex flex-wrap gap-2 text-xs font-mono text-slate-400">
+              <span class="bg-slate-800 px-2.5 py-1 rounded">Windows Server 2019</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">Microsoft Hyper-V</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">Dynamics 365 NAV</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">Sophos Firewall</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">Panasonic PBX</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Job 3: Date Sugar -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card rounded-2xl p-6 sm:p-8 space-y-4">
+            
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <h4 class="text-xl sm:text-2xl font-bold text-white">IT Specialist</h4>
+                <p class="text-base font-semibold text-sky-400">The Egyptian Italian Company for the Manufacture of Date Sugar</p>
+              </div>
+              <div class="text-xs sm:text-sm font-mono text-slate-400 flex items-center gap-2">
+                <i class="fa-regular fa-calendar"></i>
+                <span>December 2021 – November 2023</span>
+              </div>
+            </div>
+
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Spearheaded IT infrastructure operations, industrial network stabilization, and physical facility security.
+            </p>
+
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-300">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-sky-400 mt-1 flex-shrink-0"></i>
+                <span>Managed Windows Server 2016 Domain Controller, Active Directory, DNS, and DHCP services.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-sky-400 mt-1 flex-shrink-0"></i>
+                <span>Administered Microsoft Hyper-V virtual environments and configured Sophos firewall rules.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-sky-400 mt-1 flex-shrink-0"></i>
+                <span>Supervised comprehensive CCTV, IP camera systems, biometric fingerprint administration, and PBX phone installations.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-sky-400 mt-1 flex-shrink-0"></i>
+                <span>Maintained hardware health, workstation deployments, and high-uptime plant network communications.</span>
+              </li>
+            </ul>
+
+            <div class="pt-2 flex flex-wrap gap-2 text-xs font-mono text-slate-400">
+              <span class="bg-slate-800 px-2.5 py-1 rounded">Windows Server 2016</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">Hyper-V</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">Sophos Security</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">IP Surveillance</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Job 4: SERA -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card rounded-2xl p-6 sm:p-8 space-y-4">
+            
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <h4 class="text-xl sm:text-2xl font-bold text-white">IT Help Desk</h4>
+                <p class="text-base font-semibold text-sky-400">SERA FOR MATTRESSES AND CARPETS</p>
+              </div>
+              <div class="text-xs sm:text-sm font-mono text-slate-400 flex items-center gap-2">
+                <i class="fa-regular fa-calendar"></i>
+                <span>May 2020 – December 2021</span>
+              </div>
+            </div>
+
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Delivered Tier 1/2 technical support, user onboarding, workstation lifecycle deployment, and peripheral maintenance.
+            </p>
+
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-300">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-sky-400 mt-1 flex-shrink-0"></i>
+                <span>Supported Windows Server 2016 Domain Controller, managing user accounts, permission groups, and password resets.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-sky-400 mt-1 flex-shrink-0"></i>
+                <span>Deployed workstations, structured cabling, printers, docking stations, and maintained the CCTV network.</span>
+              </li>
+            </ul>
+
+            <div class="pt-2 flex flex-wrap gap-2 text-xs font-mono text-slate-400">
+              <span class="bg-slate-800 px-2.5 py-1 rounded">Desktop Support</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">Active Directory</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">Hardware & Cabling</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== CERTIFICATIONS & EDUCATION ==================== -->
+  <section id="certifications" class="py-20 bg-slate-900/30 border-t border-slate-800/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-widest text-sky-400">Continuous Growth</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Certifications & Education</h3>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Accredited credentials verifying in-depth knowledge of cloud architecture, systems administration, and network security.
+        </p>
+      </div>
+
+      <!-- Featured Certificate Showcase: Cloud Engineering Program -->
+      <div class="mb-12 glass-card rounded-2xl p-6 sm:p-8 border-2 border-sky-500/30 shadow-2xl shadow-sky-500/10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Certificate Visual Thumbnail with Click to Enlarge -->
+          <div class="lg:col-span-5 relative group cursor-pointer open-cert-modal">
+            <div class="overflow-hidden rounded-xl border border-sky-500/40 shadow-lg">
+              <img src="assets/images/certificate_cloud_engineering.png" alt="Cloud Engineering Program Certificate - Mohamed Mahmoud Mahdy" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500">
+            </div>
+            <div class="absolute inset-0 bg-sky-950/60 opacity-0 group-hover:opacity-100 rounded-xl flex items-center justify-center gap-2 text-white font-medium text-sm transition backdrop-blur-sm">
+              <i class="fa-solid fa-magnifying-glass-plus text-xl text-sky-400"></i>
+              <span>Click to View Full Certificate</span>
+            </div>
+          </div>
+
+          <!-- Certificate Details -->
+          <div class="lg:col-span-7 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-semibold bg-sky-500/15 border border-sky-500/30 text-sky-400">
+              <i class="fa-solid fa-award"></i>
+              <span>Major Academic Diploma • 320 Credit Hours</span>
+            </div>
+
+            <h4 class="text-2xl sm:text-3xl font-extrabold text-white">
+              Academic Cloud Engineering Program
+            </h4>
+            <p class="text-sm font-semibold text-slate-300">
+              Issued by <span class="text-sky-400 font-bold">IT - Gate Academy</span> • Grade: <span class="text-emerald-400 font-bold">Very Good</span>
+            </p>
+
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Comprehensive 320-hour intensive program encompassing enterprise networking, systems administration, containers, multi-cloud platforms, and solution architecture:
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 text-xs font-mono">
+              <div class="p-2.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200 flex items-center gap-2">
+                <i class="fa-solid fa-check text-sky-400"></i> CCNA 200-301
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200 flex items-center gap-2">
+                <i class="fa-solid fa-check text-sky-400"></i> MCSA 2019
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200 flex items-center gap-2">
+                <i class="fa-solid fa-check text-sky-400"></i> Linux Admin I
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200 flex items-center gap-2">
+                <i class="fa-solid fa-check text-sky-400"></i> Docker Containers
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200 flex items-center gap-2">
+                <i class="fa-solid fa-check text-sky-400"></i> AZ-900 Fundamentals
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200 flex items-center gap-2">
+                <i class="fa-solid fa-check text-sky-400"></i> AZ-104 Azure Admin
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200 flex items-center gap-2">
+                <i class="fa-solid fa-check text-sky-400"></i> AZ-305 Architect
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200 flex items-center gap-2">
+                <i class="fa-solid fa-check text-sky-400"></i> AWS Solution Architect
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200 flex items-center gap-2">
+                <i class="fa-solid fa-check text-sky-400"></i> AWS SysOps Admin
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <button class="open-cert-modal inline-flex items-center gap-2 text-sm font-semibold text-sky-400 hover:text-sky-300">
+                <span>View Full-Size Verified Certificate</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Additional Credentials Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Credential 1 -->
+        <div class="glass-card rounded-xl p-6 space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="text-xs font-mono text-sky-400">Higher Education • 2018</div>
+          <h4 class="text-lg font-bold text-white">Bachelor of Information Systems</h4>
+          <p class="text-xs text-slate-400">Obour High Institute • Foundational degree in database systems, networking, and software applications.</p>
+        </div>
+
+        <!-- Credential 2 -->
+        <div class="glass-card rounded-xl p-6 space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg">
+            <i class="fa-brands fa-microsoft"></i>
+          </div>
+          <div class="text-xs font-mono text-sky-400">Microsoft Accreditation</div>
+          <h4 class="text-lg font-bold text-white">Microsoft 365 Administration</h4>
+          <p class="text-xs text-slate-400">Cloud productivity suite management, Exchange Online, tenant policies, identity sync, and device management.</p>
+        </div>
+
+        <!-- Credential 3 -->
+        <div class="glass-card rounded-xl p-6 space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div class="text-xs font-mono text-amber-400">Network Security</div>
+          <h4 class="text-lg font-bold text-white">SOPHOS XG FIREWALL</h4>
+          <p class="text-xs text-slate-400">Perimeter security design, deep packet inspection, threat protection, firewall filtering, and secure Site-to-Site VPN.</p>
+        </div>
+
+        <!-- Credential 4 -->
+        <div class="glass-card rounded-xl p-6 space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-cubes"></i>
+          </div>
+          <div class="text-xs font-mono text-emerald-400">Virtualization</div>
+          <h4 class="text-lg font-bold text-white">VMware ESXi</h4>
+          <p class="text-xs text-slate-400">Bare-metal virtualization installation, ESXi host configuration, storage datastores, and VM lifecycle operations.</p>
+        </div>
+
+        <!-- Credential 5 -->
+        <div class="glass-card rounded-xl p-6 space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg">
+            <i class="fa-brands fa-windows"></i>
+          </div>
+          <div class="text-xs font-mono text-sky-400">Systems Certification</div>
+          <h4 class="text-lg font-bold text-white">MCSA: Windows Server</h4>
+          <p class="text-xs text-slate-400">Microsoft Certified Solutions Associate curriculum: Active Directory, Identity, Storage, and Compute services.</p>
+        </div>
+
+        <!-- Credential 6 -->
+        <div class="glass-card rounded-xl p-6 space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-network-wired"></i>
+          </div>
+          <div class="text-xs font-mono text-emerald-400">Routing & Switching</div>
+          <h4 class="text-lg font-bold text-white">CCNA (Cisco Certified Network Associate)</h4>
+          <p class="text-xs text-slate-400">IP connectivity, routing protocols, VLANs, switching architecture, subnetting, and network security foundations.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== ARCHITECTURE & LAB SHOWCASE ==================== -->
+  <section id="infrastructure" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-widest text-sky-400">System Blueprint</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Architecture & Infrastructure Scenarios</h3>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Representative enterprise deployments designed, maintained, and operated in production environments.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Lab Scenario 1 -->
+        <div class="glass-card rounded-2xl p-6 sm:p-7 space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold">01</div>
+              <h4 class="text-lg font-bold text-white">Enterprise Active Directory & Cisco VLAN Segregation</h4>
+            </div>
+            <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">Production Ready</span>
+          </div>
+
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Multi-tier Domain Controller architecture on Windows Server 2022 paired with Cisco 3850/3750 core/distribution switches. Strict VLAN separation (Management, Servers, Corporate Users, VoIP Grandstream, Guest WiFi, and Security CCTV) with 802.1Q trunking and DHCP Snooping.
+          </p>
+
+          <div class="bg-slate-950/70 rounded-xl p-4 font-mono text-xs text-slate-300 space-y-1.5 border border-slate-800">
+            <div class="text-sky-400"># Topology Highlights:</div>
+            <div>├── DC01 / DC02: Primary & Secondary Domain Replication</div>
+            <div>├── VLAN 10 (Prod Servers), VLAN 20 (Users), VLAN 30 (VoIP PBX)</div>
+            <div>└── Cisco Access-Lists (ACLs) & GPO Security Hardening</div>
+          </div>
+        </div>
+
+        <!-- Lab Scenario 2 -->
+        <div class="glass-card rounded-2xl p-6 sm:p-7 space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">02</div>
+              <h4 class="text-lg font-bold text-white">VMware ESXi High-Availability & Veeam v12 DR</h4>
+            </div>
+            <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">Zero-Loss RPO</span>
+          </div>
+
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Clustered ESXi hypervisor nodes hosting critical enterprise workloads (ERP NEXT, Dynamics NAV, Database servers). Nightly synthetic full backups with hourly incrementals managed via Veeam Backup Server v12, with instant VM recovery tests ensuring rapid disaster recovery.
+          </p>
+
+          <div class="bg-slate-950/70 rounded-xl p-4 font-mono text-xs text-slate-300 space-y-1.5 border border-slate-800">
+            <div class="text-emerald-400"># DR Metrics:</div>
+            <div>├── Target RPO: &lt; 15 minutes (Database Transaction Logs)</div>
+            <div>├── Target RTO: &lt; 30 minutes (Veeam Instant VM Restore)</div>
+            <div>└── Immutable Backup Storage & Air-Gapped Offsite Sync</div>
+          </div>
+        </div>
+
+        <!-- Lab Scenario 3 -->
+        <div class="glass-card rounded-2xl p-6 sm:p-7 space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">03</div>
+              <h4 class="text-lg font-bold text-white">Multi-Site IPsec VPN via Sophos XG & pfSense</h4>
+            </div>
+            <span class="text-xs font-mono text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded">Redundant Mesh</span>
+          </div>
+
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Interconnecting corporate headquarters with remote manufacturing plants and warehouse branches via hardware-accelerated AES-256 IPsec Site-to-Site tunnels. Automated failover routes with secondary WAN links ensuring uninterrupted business data exchange.
+          </p>
+
+          <div class="bg-slate-950/70 rounded-xl p-4 font-mono text-xs text-slate-300 space-y-1.5 border border-slate-800">
+            <div class="text-amber-400"># Perimeter Specs:</div>
+            <div>├── Sophos XG Core Appliance + pfSense Remote Edge</div>
+            <div>├── IPsec IKEv2 Site-to-Site Tunnels + SSL Roadwarrior VPN</div>
+            <div>└── Deep Packet Inspection & Kaspersky Centralized Defense</div>
+          </div>
+        </div>
+
+        <!-- Lab Scenario 4 -->
+        <div class="glass-card rounded-2xl p-6 sm:p-7 space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold">04</div>
+              <h4 class="text-lg font-bold text-white">Hybrid Cloud & Microsoft 365 Tenant Administration</h4>
+            </div>
+            <span class="text-xs font-mono text-purple-400 bg-purple-500/10 px-2 py-0.5 rounded">Modern Cloud</span>
+          </div>
+
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Synchronizing on-premises Active Directory identities with Microsoft Entra ID (Azure AD), managing Microsoft 365 Exchange mail routing, spam/phishing filters, Multi-Factor Authentication (MFA), and Azure virtual machine workloads.
+          </p>
+
+          <div class="bg-slate-950/70 rounded-xl p-4 font-mono text-xs text-slate-300 space-y-1.5 border border-slate-800">
+            <div class="text-purple-400"># Cloud Operations:</div>
+            <div>├── Microsoft 365 Exchange Online Mail Administration</div>
+            <div>├── Azure Entra ID Single Sign-On (SSO) & MFA Enforcement</div>
+            <div>└── Azure VNet / AWS EC2 Compute Foundations & Docker</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== CONTACT & LET'S CONNECT ==================== -->
+  <section id="contact" class="py-20 bg-slate-900/40 border-t border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <h2 class="text-xs font-mono font-bold uppercase tracking-widest text-sky-400">Get in Touch</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Let's Discuss Infrastructure & Opportunities</h3>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Whether you need a senior specialist to stabilize IT operations, build resilient cloud architecture, or secure your enterprise network, I'm ready to contribute.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        
+        <!-- Contact Cards & Info (5 cols) -->
+        <div class="lg:col-span-5 space-y-4">
+          
+          <!-- Email Card -->
+          <div class="glass-card rounded-xl p-5 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-sky-500/15 text-sky-400 flex items-center justify-center text-xl">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <p class="text-xs text-slate-400 font-mono">Email Address</p>
+                <a href="mailto:mohamed.mahmoudit5@gmail.com" class="text-sm sm:text-base font-bold text-white hover:text-sky-400 transition">
+                  mohamed.mahmoudit5@gmail.com
+                </a>
+              </div>
+            </div>
+            <button class="copy-email-btn text-xs font-mono px-3 py-1.5 rounded-lg border border-slate-700 bg-slate-800/70 text-slate-300 hover:text-white transition" title="Copy email">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="glass-card rounded-xl p-5 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center text-xl">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <p class="text-xs text-slate-400 font-mono">Direct Phone</p>
+                <a href="tel:01031960100" class="text-sm sm:text-base font-bold text-white hover:text-emerald-400 transition">
+                  +20 103 196 0100
+                </a>
+              </div>
+            </div>
+            <a href="tel:01031960100" class="text-xs font-mono px-3 py-1.5 rounded-lg border border-emerald-500/40 bg-emerald-500/20 text-emerald-300 hover:text-white transition">
+              Call
+            </a>
+          </div>
+
+          <!-- WhatsApp Card -->
+          <div class="glass-card rounded-xl p-5 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-green-500/15 text-green-400 flex items-center justify-center text-xl">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div>
+                <p class="text-xs text-slate-400 font-mono">Instant Chat</p>
+                <a href="https://wa.me/201031960100" target="_blank" rel="noopener noreferrer" class="text-sm sm:text-base font-bold text-white hover:text-green-400 transition">
+                  WhatsApp Direct Message
+                </a>
+              </div>
+            </div>
+            <a href="https://wa.me/201031960100" target="_blank" rel="noopener noreferrer" class="text-xs font-mono px-3 py-1.5 rounded-lg border border-green-500/40 bg-green-500/20 text-green-300 hover:text-white transition">
+              Chat
+            </a>
+          </div>
+
+          <!-- Location Card -->
+          <div class="glass-card rounded-xl p-5 flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-purple-500/15 text-purple-400 flex items-center justify-center text-xl">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-400 font-mono">Base Location</p>
+              <p class="text-sm sm:text-base font-bold text-white">Cairo, Egypt (Open to Remote & Hybrid)</p>
+            </div>
+          </div>
+
+          <!-- Download CV Card -->
+          <div class="glass-card rounded-xl p-5 bg-gradient-to-r from-sky-950/40 to-blue-950/40 border-sky-500/30 flex items-center justify-between">
+            <div>
+              <h5 class="text-sm font-bold text-white">Curriculum Vitae (PDF)</h5>
+              <p class="text-xs text-slate-400">ATS-optimized format with full verification</p>
+            </div>
+            <a href="assets/Mohamed_Mahmoud_Mahdy_CV.pdf" download="Mohamed_Mahmoud_Mahdy_CV.pdf" class="px-3.5 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-white text-xs font-bold transition flex items-center gap-1.5">
+              <i class="fa-solid fa-download"></i> Download
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Interactive Direct Message Form (7 cols) -->
+        <div class="lg:col-span-7">
+          <div class="glass-card rounded-2xl p-6 sm:p-8">
+            <h4 class="text-xl font-bold text-white mb-2">Send a Direct Message</h4>
+            <p class="text-xs text-slate-400 mb-6">Fill out the form below to initiate communication directly to Mohamed's mailbox.</p>
+
+            <div id="form-success-alert" class="hidden mb-6 p-4 rounded-xl bg-emerald-500/15 border border-emerald-500/40 text-emerald-300 text-xs flex items-center gap-3">
+              <i class="fa-solid fa-circle-check text-lg"></i>
+              <div>
+                <p class="font-bold">Message client initialized!</p>
+                <p class="text-[11px] text-emerald-400">Your mail application has been prepared with your message to mohamed.mahmoudit5@gmail.com.</p>
+              </div>
+            </div>
+
+            <form id="portfolio-contact-form" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="form-name" class="block text-xs font-mono text-slate-300 mb-1.5">Your Name *</label>
+                  <input type="text" id="form-name" required placeholder="e.g. Sarah Jenkins" class="w-full px-4 py-2.5 rounded-xl bg-slate-900/80 border border-slate-700 text-sm text-slate-200 outline-none focus:border-sky-400 transition placeholder:text-slate-600">
+                </div>
+                <div>
+                  <label for="form-email" class="block text-xs font-mono text-slate-300 mb-1.5">Your Email *</label>
+                  <input type="email" id="form-email" required placeholder="name@company.com" class="w-full px-4 py-2.5 rounded-xl bg-slate-900/80 border border-slate-700 text-sm text-slate-200 outline-none focus:border-sky-400 transition placeholder:text-slate-600">
+                </div>
+              </div>
+
+              <div>
+                <label for="form-subject" class="block text-xs font-mono text-slate-300 mb-1.5">Subject / Opportunity *</label>
+                <input type="text" id="form-subject" required placeholder="e.g. IT Infrastructure Specialist Position" class="w-full px-4 py-2.5 rounded-xl bg-slate-900/80 border border-slate-700 text-sm text-slate-200 outline-none focus:border-sky-400 transition placeholder:text-slate-600">
+              </div>
+
+              <div>
+                <label for="form-message" class="block text-xs font-mono text-slate-300 mb-1.5">Message / Project Scope *</label>
+                <textarea id="form-message" rows="4" required placeholder="Describe your team's infrastructure requirements or role details..." class="w-full px-4 py-2.5 rounded-xl bg-slate-900/80 border border-slate-700 text-sm text-slate-200 outline-none focus:border-sky-400 transition placeholder:text-slate-600"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 rounded-xl font-bold bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white shadow-lg shadow-sky-500/25 transition flex items-center justify-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="py-12 border-t border-slate-800 bg-[#080d1a]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center font-mono font-bold text-sm">
+            <i class="fa-solid fa-terminal"></i>
+          </div>
+          <div>
+            <span class="font-extrabold text-sm text-white">Mohamed Mahmoud Mahdy</span>
+            <span class="block text-xs font-mono text-slate-400">IT Infrastructure & Systems Specialist</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-6 text-xs text-slate-400 font-mono">
+          <a href="#about" class="hover:text-sky-400 transition">About</a>
+          <a href="#skills" class="hover:text-sky-400 transition">Skills</a>
+          <a href="#experience" class="hover:text-sky-400 transition">Experience</a>
+          <a href="#certifications" class="hover:text-sky-400 transition">Certificates</a>
+          <a href="https://github.com/M-M-Mahdy" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition flex items-center gap-1">
+            <i class="fa-brands fa-github text-sm"></i> GitHub
+          </a>
+        </div>
+
+        <div class="text-xs text-slate-500 font-mono flex items-center gap-3">
+          <span>&copy; 2026 Mohamed Mahmoud Mahdy.</span>
+          <a href="#" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center transition" title="Back to top">
+            <i class="fa-solid fa-chevron-up text-xs"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ==================== CERTIFICATE LIGHTBOX MODAL ==================== -->
+  <div id="cert-modal" class="modal-overlay fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6">
+    <div class="relative max-w-4xl w-full bg-[#0d1424] border border-sky-500/30 rounded-2xl shadow-2xl overflow-hidden animate-float">
+      
+      <!-- Modal Header -->
+      <div class="p-4 sm:p-5 bg-slate-900 border-b border-slate-800 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-award text-sky-400 text-lg"></i>
+          <div>
+            <h3 class="text-sm sm:text-base font-bold text-white">Academic Cloud Engineering Program Certificate</h3>
+            <p class="text-xs text-slate-400 font-mono">IT Gate Academy • 320 Credit Hours • Grade: Very Good</p>
+          </div>
+        </div>
+        <button class="close-cert-modal w-9 h-9 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center transition" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Modal Image View -->
+      <div class="p-4 sm:p-6 bg-slate-950 flex items-center justify-center overflow-auto max-h-[75vh]">
+        <img src="assets/images/certificate_cloud_engineering.png" alt="Full Certificate Cloud Engineering Mohamed Mahmoud Mahdy" class="max-w-full h-auto rounded-lg shadow-xl border border-slate-800">
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-4 bg-slate-900 border-t border-slate-800 flex flex-wrap items-center justify-between gap-3 text-xs">
+        <div class="text-slate-400 font-mono">
+          Covers: CCNA 200-301, MCSA 2019, Linux Admin I, Docker, Azure AZ-900/104/305, AWS Solutions & SysOps.
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="assets/images/certificate_cloud_engineering.png" download="Mohamed_Mahmoud_Mahdy_Cloud_Certificate.png" class="px-3.5 py-1.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-white font-semibold transition flex items-center gap-1.5">
+            <i class="fa-solid fa-download"></i> Download Image
+          </a>
+          <button class="close-cert-modal px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">
+            Close
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

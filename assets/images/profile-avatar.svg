@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0b1120" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="140" cy="140" r="120" fill="url(#accentGrad)" opacity="0.15" filter="url(#glow)"/>
+
+  <!-- Outer Tech Ring -->
+  <circle cx="140" cy="140" r="128" stroke="url(#ringGrad)" stroke-width="2" stroke-dasharray="16 8" opacity="0.6"/>
+  <circle cx="140" cy="140" r="118" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Base Circle -->
+  <circle cx="140" cy="140" r="110" fill="url(#bgGrad)" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.4"/>
+
+  <!-- Grid Pattern -->
+  <g opacity="0.12">
+    <path d="M60 140h160M140 60v160M85 85l110 110M85 195l110-110" stroke="#38bdf8" stroke-width="1.5"/>
+  </g>
+
+  <!-- Systems / Cloud Engineer Icon Graphic -->
+  <!-- Server Tower / Cloud Base -->
+  <rect x="85" y="100" width="110" height="30" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="102" cy="115" r="4" fill="#38bdf8"/>
+  <circle cx="116" cy="115" r="4" fill="#10b981"/>
+  <line x1="135" y1="115" x2="180" y2="115" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+
+  <rect x="85" y="140" width="110" height="30" rx="6" fill="#1e293b" stroke="#0ea5e9" stroke-width="2"/>
+  <circle cx="102" cy="155" r="4" fill="#0ea5e9"/>
+  <circle cx="116" cy="155" r="4" fill="#38bdf8"/>
+  <line x1="135" y1="155" x2="180" y2="155" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Cloud Top -->
+  <path d="M120 78a18 18 0 0 1 34-6 16 16 0 0 1 18 16c0 1.5-.2 3-.6 4.4H108c-4.4 0-8-3.6-8-8a8 8 0 0 1 8-8c1 0 2 .2 3 .5a18.2 18.2 0 0 1 9-8.9z" fill="#38bdf8" opacity="0.85"/>
+
+  <!-- Shield / Security Overlay -->
+  <path d="M140 185c-15-5-25-15-25-28v-12l25-8 25 8v12c0 13-10 23-25 28z" fill="#0f172a" stroke="#10b981" stroke-width="2"/>
+  <path d="M133 162l5 5 10-10" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Monogram Initials Tag -->
+  <rect x="95" y="210" width="90" height="26" rx="13" fill="#0284c7" fill-opacity="0.25" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="140" y="228" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="700" fill="#f8fafc" text-anchor="middle" letter-spacing="2">M. MAHDY</text>
+</svg>
